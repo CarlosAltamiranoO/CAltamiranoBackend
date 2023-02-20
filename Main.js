@@ -1,15 +1,5 @@
 
-class Product {
-    constructor() {
-        this.id = 0;
-        this.title = "Ingrerse nombre";
-        this.description = "ingrese descripicon";
-        this.price = 0;
-        this.thumbnail = "Sin imagen";
-        this.code = "a0";
-        this.stock = 0;
-    }
-}
+
 class ProductManager {
     constructor() {
         this.productos = [];
@@ -18,35 +8,25 @@ class ProductManager {
 
     getProducts() {
 
-        if (this.productos.length === 0) {
-            console.log(this.productos);
-        }
+        if (this.productos.length === 0) console.log(this.productos);
         else {
             for (const iterator of this.productos) {
                 console.log(iterator);
             }
         }
-
     }
 
     addProducts(title, description, price, thumbnail, code2, stock) {
-            if(this.productos.find(({code}) => code === code2))return console.log( "el producto ya esta cargado");
-        this.id++;
-        var producto = new Product();
-        producto.id = this.id;
-        producto.title = title;
-        producto.description = description;
-        producto.price = price;
-        producto.thumbnail = thumbnail;
-        producto.code = code2;
-        producto.stock = stock;
-        this.productos.push(producto);
+        if (this.productos.find(({ code }) => code === code2)) return console.log("el producto ya esta cargado");
+        else {
+            this.id++;
+            this.productos.push({ id: this.id, title: title, description: description, price: price, thumbnail: thumbnail, code: code2, stock: stock });
+        }
     }
     getProductsById(id2) {
-        let respuesta = this.productos.find(({id}) => id === id2);
-        (respuesta === undefined)? console.log("no se encuentra el producto"): console.log(respuesta);
+        let respuesta = this.productos.find(({ id }) => id === id2);
+        (respuesta === undefined) ? console.log("no se encuentra el producto") : console.log(respuesta);
     }
-    
 }
 
 
