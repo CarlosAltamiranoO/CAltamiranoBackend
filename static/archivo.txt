@@ -1,0 +1,20 @@
+[
+  {
+    "id": "f9d28348-a70b-4ad7-89ae-0c2ec36fdcec",
+    "title": "tablet",
+    "description": "tablet samsung",
+    "price": 100000,
+    "thumbnail": "Sin imagen",
+    "code": "a5",
+    "stock": 20
+  },
+  {
+    "id": "e97e298d-0075-4d13-8563-f79e20d3033e",
+    "title": "notebook",
+    "description": "Notebook gamer",
+    "price": 400000,
+    "thumbnail": "Sin imagen",
+    "code": "a1",
+    "stock": 10
+  }
+]
