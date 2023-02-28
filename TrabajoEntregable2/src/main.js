@@ -36,6 +36,7 @@ class ProductManager {
     }
     async updateProduct(id2, campo, cambio) {
         await this.getProduct()
+        if (await this.getProductsById(id2) === "no se encuentra el producto") return console.log("no se encuentra el producto");
         this.productos = this.productos.map((producto) => {
             if (producto.id === id2) {
                 let aux = producto;
