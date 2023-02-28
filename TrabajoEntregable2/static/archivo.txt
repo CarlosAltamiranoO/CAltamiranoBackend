@@ -4,7 +4,7 @@
     "title": "tablet",
     "description": "tablet samsung",
     "price": 100000,
-    "thumbnail": "Sin imagen",
+    "thumbnail": "con imagen en algun lado",
     "code": "a5",
     "stock": 20
   },
@@ -16,5 +16,14 @@
     "thumbnail": "Sin imagen",
     "code": "a1",
     "stock": 10
+  },
+  {
+    "id": "88c4d74c-15f8-4c60-8bc5-679aacc1a590",
+    "title": "PC",
+    "description": "NPC gamer",
+    "price": 200000,
+    "thumbnail": "Sin imagen",
+    "code": "a167",
+    "stock": 16
   }
 ]
